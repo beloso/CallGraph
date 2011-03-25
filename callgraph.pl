@@ -153,3 +153,54 @@ sub dot {
 		print "}\n";
 	}	
 }
+
+__END__
+
+=head1 NAME
+
+callgraph - Java class dependency graph generator.
+
+=head1 SYNOPSIS
+
+callgraph [B<-roll>|B<-dot>|B<-csv>] [B<-prefix> F<project_prefix>] [B<-o> F<output_file>] F<root_dir>
+
+=head1 DESCRIPTION
+
+This tool generates a class dependency graph for Java projects. It is capable of outputing in either B<dot> or B<csv> files. Thes files can then be processed by approriate tools.
+
+=head1 OPTIONS
+
+=over 2
+	
+=item B<-roll>
+
+rolls up information to the package level. 
+
+=item B<-dot> 
+
+outputs a B<dot> file.
+
+=item B<-csv>
+
+outputs a B<csv> file.
+
+=item B<-o> F<filename>
+
+outputs to the specified file.
+
+=item B<-prefix> F<project_prefix>
+
+define the project prefix.
+
+=back
+
+=head1 AUTHORS
+
+Tiago Veloso and Marcio Coelho.
+
+=head1 COPYRIGHT
+
+Permission is granted to copy, distribute and/or modify this 
+document under the terms of the GNU Public Licence.
+
+=cut
